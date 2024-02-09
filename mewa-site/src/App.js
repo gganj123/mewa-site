@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-const API_KEY = "test_2235af61a7d15c223bf690f6f63461100cafd10913fba65b268239a10cfa115824f4d350bb0e301c962c835d49dea320"
+const API_KEY = process.env.REACT_APP_KEY;
 const characterName = "정답맨"
   // const urlString = "https://open.api.nexon.com/maplestory/v1/id"
   // const params = { character_name: characterName }
@@ -38,6 +38,7 @@ const characterName = "정답맨"
 const App = () => {
   const [ocidData, setData] = useState(null);
   const [data2, setData2] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -93,7 +94,7 @@ const App = () => {
   return (
     <div>
       {/* 받아온 데이터를 표시 */}
-      {ocidData && (
+      {data2 && (
         <div>
           {/* 데이터 표시 예시 */}
           <p>Data: {JSON.stringify(data2.data)}</p>
