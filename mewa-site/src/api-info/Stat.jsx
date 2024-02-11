@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import useOcid from './useOcid';
-import CurrentDate from './CurrentDate';
+import { useDispatch, useSelector } from 'react-redux';
+import { setOcidData } from '../redux/action';
 
 const API_KEY = process.env.REACT_APP_KEY;
 const statURL = 'https://open.api.nexon.com/maplestory/v1/character/stat';
 
 const Stat = () => {
-  const ocidData = useOcid();
+  const ocidData = useSelector(state => state.ocidData);
+  const dispatch = useDispatch();
   const [statData, setStatData] = useState(null);
 
   useEffect(() => {

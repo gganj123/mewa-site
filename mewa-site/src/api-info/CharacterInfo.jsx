@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import useOcid from './useOcid';
-import CurrentDate from './CurrentDate';
+import { setOcidData } from '../redux/action';
 
 const API_KEY = process.env.REACT_APP_KEY;
 const characterInfoURL = 'https://open.api.nexon.com//maplestory/v1/character/basic';
 
 const CharacterInfo = () => {
-  const ocidData = useOcid();
+  const ocidData = useSelector(state => state.ocidData);
+  const dispatch = useDispatch();
   const [characterData, setCharacterData] = useState(null);
 
-  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,7 +29,6 @@ const CharacterInfo = () => {
         console.error('Error fetching character data:', error.message);
       }
     };
-   
 
     fetchData();
   }, [ocidData]);
