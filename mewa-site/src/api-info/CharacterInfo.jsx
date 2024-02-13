@@ -36,7 +36,24 @@ const CharacterInfo = () => {
   return (
     <div>
       <h2>Character Data:</h2>
-      <pre>{JSON.stringify(characterData, null, 2)}</pre>
+      <div className="inBox">
+        {characterData && (
+          <div>
+            <article class="imgf">
+              <img src={characterData.character_image} alt="Character" />
+            </article>
+            <article>
+            <p>{characterData.character_name}<br></br>
+          레벨: {characterData.character_level}<br></br>
+          직업: {characterData.character_class}<br></br>
+          경험치: {characterData.character_exp}({characterData.character_exp_rate}%)<br></br>
+          성별: {characterData.character_gender}<br></br>
+          월드: {characterData.world_name}<br></br>
+          길드: {characterData.character_guild_name}</p>
+            </article>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
