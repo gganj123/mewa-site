@@ -34,9 +34,17 @@ const Stat = () => {
   }, [ocidData]);
 
   return (
-    <div>
-      <h2>Stat Data:</h2>
-      <pre>{JSON.stringify(statData, null, 2)}</pre>
+    <div className="Stat">
+      
+      {/* {statData && (
+        <ul>
+          {statData.stat.map((statItem, index) => (
+            <li key={index}>
+              {statItem.name}: {statItem.value}
+            </li>
+          ))}
+        </ul>
+      )} */}
     </div>
   );
 };

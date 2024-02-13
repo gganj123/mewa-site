@@ -50,19 +50,18 @@ body{
     
     background: #151414;
     }
+main{
+
+    position: relative;
+    width: 100vw;
+    height: 300%;
+    
+    background: #151414;
+
+}
     
     /* infoBox */
-    .infoBox{
-    position: absolute;
-    width: 90vw;
-    height: 512px;
-    left: 18px;
-    top: 385px;
-    
-    background: #5E5C5C;
-    border-radius: 10px;
-    }
-    
+
     
     .logo{
     
@@ -136,4 +135,195 @@ article p {
     color:white;
   }
 
+  .infoBox{
+    position: absolute;
+    width: 93vw;
+    height: 512px;
+    left: 18px;
+    top: 310px;
+    color: white;
+    background: #5E5C5C;
+    border-radius: 10px;
+    }
+
+
+.info{
+position: absolute;
+width: 85vw;
+height: 126px;
+left: 33px;
+top: 30px;
+
+background: #D9D9D9;
+border-radius: 11px;
+}
+
+
+/* infoDojang */
+p.Dojang{
+position: absolute;
+width: 94px;
+height: 14px;
+left: 60px;
+top: 400px;
+font-size:11px;
+color:white;
+background: #6C757D;
+border-radius: 17px;
+}
+
+/* infoUnion */
+
+position: absolute;
+width: 94px;
+height: 14px;
+left: 47px;
+top: 439px;
+
+background: #6C757D;
+border-radius: 17px;
+
+
+/* infoPopular */
+p.Popular{
+position: absolute;
+width: 94px;
+height: 14px;
+left: 47px;
+top: 477px;
+color:white;
+background: #6C757D;
+border-radius: 17px;
+}
+
+/* infoStatBox */
+.infoStatBox{
+position: absolute;
+width: 85vw;
+height: 344px;
+left: 33px;
+top: 186px;
+
+background: #86939F;
+border-radius: 10px;
+}
+
+.fighter{
+position: absolute;
+width: 80vw;
+height: 50px;
+left: 22px;
+top: 20px;
+
+background: #31434B;
+border-radius: 6px;
+}
+
+.fighter2{
+  position: absolute;
+  width: 80vw;
+  height: 500px;
+  left: 22px;
+  top: 90px;
+  display: flex;
+  justify-content: space-between;
   
+  background: #31434B;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  }
+  .item{
+    width : 49%;
+    height: 20px;
+    background : #6C757D;
+  }
+
+/* infoExpCan */
+
+position: absolute;
+width: 334px;
+height: 15px;
+left: 42px;
+top: 501px;
+
+background: #252424;
+border-radius: 6px;
+
+
+/* infoGuildNick */
+
+position: absolute;
+width: 94px;
+height: 14px;
+left: 275px;
+top: 477px;
+
+background: #6C757D;
+border-radius: 17px;
+
+
+/* infoGuild */
+
+position: absolute;
+width: 94px;
+height: 14px;
+left: 275px;
+top: 458px;
+
+background: #2B56EB;
+border-radius: 17px;
+
+
+/* infoNick */
+
+position: absolute;
+width: 49px;
+height: 11px;
+left: 183px;
+top: 485px;
+
+background: #2B56EB;
+border-radius: 17px;
+
+
+/* infoCharImg */
+
+position: absolute;
+width: 64px;
+height: 71px;
+left: calc(50% - 64px/2 + 58px);
+top: 411px;
+
+background: #FFFFFF;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* 레벨 284 */
+
+position: absolute;
+width: 48px;
+height: 15px;
+left: 184px;
+top: 396px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #332929;
+
+
+
+/* infoCareer */
+
+position: absolute;
+width: 94px;
+height: 14px;
+left: 47px;
+top: 405px;
+
+background: #171414;
+border-radius: 17px;

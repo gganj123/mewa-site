@@ -6,7 +6,7 @@ import CharacterInfo from './CharacterInfo';
 import Stat from './Stat';
 import Hyper from './Hyper';
 import Popularity from './popularity';
-import Dojang from './Dojang';
+import Dojang from './dojang';
 
 const UseOcid = () => {
   const ocidData = useSelector(state => state.ocidData);
@@ -31,6 +31,7 @@ const UseOcid = () => {
         });
 
         dispatch(setOcidData(response.data.ocid));
+
       } catch (error) {
         console.error('Error fetching ocid data:', error.message);
       }

@@ -36,15 +36,13 @@ const Dojang = () => {
   }
 
   return (
-    <div>
-      <h2>Dojang Info:</h2>
-      <p>Date: {dojangData.date}</p>
-      <p>Character Class: {dojangData.character_class}</p>
-      <p>World Name: {dojangData.world_name}</p>
-      <p>Dojang Best Floor: {dojangData.dojang_best_floor}</p>
-      <p>Date Dojang Record: {dojangData.date_dojang_record}</p>
-      <p>Dojang Best Time: {dojangData.dojang_best_time}</p>
-    </div>
+    <p className='Dojang'>
+    
+      무릉도장 :   {dojangData.dojang_best_floor}
+      {/* <p>최고기록시간: {dojangData.dojang_best_time}초</p> */}
+        {/* <p>직업: {dojangData.character_class}</p>
+      <p>월드: {dojangData.world_name}</p> */}
+    </p>
   );
 };
 

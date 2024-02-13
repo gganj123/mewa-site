@@ -36,11 +36,9 @@ const Popularity = () => {
   }
 
   return (
-    <div>
-      <h2>Popularity Info:</h2>
-      <p>Date: {popularityData.date}</p>
-      <p>Popularity: {popularityData.popularity}</p>
-    </div>
+      <p className="Popular">
+        인기도 : {popularityData.popularity}
+        </p>
   );
 };
 
