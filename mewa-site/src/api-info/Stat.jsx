@@ -33,20 +33,22 @@ const Stat = () => {
     fetchData();
   }, [ocidData]);
 
-  return (
+  if (!statData) {
+    return <div>Loading...</div>;
+  }
+  return(
+    statData.final_stat.find((name)=>name == '전투력'),
     <div className="Stat">
       
-      {/* {statData && (
-        <ul>
-          {statData.stat.map((statItem, index) => (
-            <li key={index}>
-              {statItem.name}: {statItem.value}
-            </li>
+          {statData.final_stat.map((stat, index) => (
+            <div key={index} className="item">
+              <span>{stat.stat_name}</span><span> {stat.stat_value}</span>
+            </div>
           ))}
-        </ul>
-      )} */}
-    </div>
-  );
+      
+    </div>);
+  
+          
 };
 
 export default Stat;
