@@ -36,10 +36,16 @@ const Stat = () => {
   if (!statData) {
     return <div>Loading...</div>;
   }
+  const addCommas = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
+  const fighter = statData && statData.final_stat.find((stat) => stat.stat_name === '전투력')?.stat_value
   return(
-    statData.final_stat.find((name)=>name == '전투력'),
+    
     <div className="Stat">
-      
+      <div className="fighter">
+  전투력 {addCommas(fighter)}
+  </div>
           {statData.final_stat.map((stat, index) => (
             <div key={index} className="item">
               <span>{stat.stat_name}</span><span> {stat.stat_value}</span>

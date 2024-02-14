@@ -35,7 +35,6 @@ const CharacterInfo = () => {
 
   return (
     <div>
-      <h2>Character Data:</h2>
       <div className="inBox">
         {characterData && (
           <div>

@@ -1,0 +1,29 @@
+[33mcommit 5e35b9d09dd11094c3b76430cf0afc9f08066c38[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gganj123 <48715999+gganj123@users.noreply.github.com>
+Date:   Sun Feb 11 01:39:08 2024 +0900
+
+    feat : CharacterInfo,Hyper,Stat,preset
+
+[33mcommit 2b4546b51cd091fc395ffe8d51baa5c396170ec5[m
+Author: gganj123 <48715999+gganj123@users.noreply.github.com>
+Date:   Sat Feb 10 16:04:00 2024 +0900
+
+    test api 1
+
+[33mcommit 74282e07f1ebb70092c56339aad255c3ad482d1f[m
+Author: gganj123 <48715999+gganj123@users.noreply.github.com>
+Date:   Sat Feb 10 03:57:34 2024 +0900
+
+    feat maple api success in js fetch and react axios
+
+[33mcommit dcda73fa54311c5a574de2b3185c7eab8a54c65c[m
+Author: gganj123 <48715999+gganj123@users.noreply.github.com>
+Date:   Sat Feb 10 03:39:26 2024 +0900
+
+    feat: maple api in react and js fetch test success
+
+[33mcommit 10385d02fbf41c12e7c8e541aff62adaa69ad455[m
+Author: gganj123 <48715999+gganj123@users.noreply.github.com>
+Date:   Fri Feb 9 23:29:38 2024 +0900
+
+    Initial commit
